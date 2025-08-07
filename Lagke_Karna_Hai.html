@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Properties Example</title>
+  <style>
+    /* CSS Links */
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Lists */
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* Width and max-width */
+    .box {
+      width: 80%;
+      max-width: 600px;
+      background-color: lightblue;
+      padding: 10px;
+      margin: 10px auto;
+    }
+
+    /* Display property */
+    .inline-block-box {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      margin: 5px;
+    }
+
+    /* Position and z-index */
+    .relative-box {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: lightgreen;
+    }
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px;
+      height: 100px;
+      background: red;
+      z-index: 2;
+    }
+
+    /* Overflow */
+    .overflow-box {
+      width: 200px;
+      height: 100px;
+      overflow: auto;
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    /* Float and Clear */
+    .float-left {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background: pink;
+      margin-right: 10px;
+    }
+    .clear-fix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    /* Horizontal and Vertical Alignment */
+    .center-text {
+      text-align: center;
+    }
+    .vertical-align-box {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #eee;
+    }
+
+    /* Flexbox */
+    .flex-container {
+      display: flex;
+      gap: 10px;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+    .flex-item {
+      background: #ddd;
+      padding: 20px;
+      flex: 1;
+      text-align: center;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+    .navbar a {
+      float: left;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
+    /* Forms */
+    form {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #fafafa;
+      max-width: 400px;
+    }
+    label, input {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <h2 class="center-text">CSS Properties Showcase</h2>
+
+  <!-- CSS Links -->
+  <p>Visit <a href="https://example.com">Example Site</a></p>
+
+  <!-- Lists -->
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <!-- Table -->
+  <table>
+    <tr><th>Name</th><th>Age</th></tr>
+    <tr><td>Alice</td><td>25</td></tr>
+    <tr><td>Bob</td><td>30</td></tr>
+  </table>
+
+  <!-- Width and Max-width -->
+  <div class="box">This box uses width and max-width properties.</div>
+
+  <!-- Display inline-block -->
+  <div>
+    <div class="inline-block-box"></div>
+    <div class="inline-block-box"></div>
+  </div>
+
+  <!-- Position and z-index -->
+  <div class="relative-box">
+    <div class="absolute-box">Z-index Box</div>
+  </div>
+
+  <!-- Overflow -->
+  <div class="overflow-box">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non libero vel augue cursus feugiat. Aenean feugiat.
+  </div>
+
+  <!-- Float and Clear -->
+  <div class="clear-fix">
+    <div class="float-left"></div>
+    <p>This text wraps around a floated box and is cleared properly.</p>
+  </div>
+
+  <!-- Vertical Alignment -->
+  <div class="vertical-align-box">
+    <p>Vertically Centered Text</p>
+  </div>
+
+  <!-- Flexbox -->
+  <div class="flex-container">
+    <div class="flex-item">Box 1</div>
+    <div class="flex-item">Box 2</div>
+    <div class="flex-item">Box 3</div>
+  </div>
+
+  <!-- Form -->
+  <form> 
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter name">
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter email">
+    
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
