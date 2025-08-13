@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Remix Icons (for existing icon usage) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <title>Bus Traveller – Bootstrap Layout</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#home">BusTraveller</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#tour">Tour</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#package">Package</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">Contact</a></li>
+          </ul>
+          <div class="d-none d-lg-flex ms-lg-3">
+            <a class="btn btn-light text-primary fw-semibold rounded-pill" href="#contact">Book Trip</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="pt-5 mt-4">
+      <div class="container py-5">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6 text-center text-lg-start">
+            <p class="fw-semibold text-dark mb-2">BUS YOUR TREVEL JOURNEY</p>
+            <h1 class="display-4 fw-semibold mb-4">Where Every Bus Ride Feels Magical!</h1>
+            <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+              <a class="btn btn-primary btn-lg rounded-pill" href="#contact">Book A Trip Now</a>
+              <a class="btn btn-light rounded-circle p-0 d-inline-flex align-items-center justify-content-center" style="width:56px;height:56px;" href="#">
+                <i class="ri-play-circle-fill fs-2 text-primary"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="img/bus.png" alt="Bus" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- POPULAR DESTINATION -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="fw-bold mb-1 text-start">Popular Destination</h2>
+        <p class="text-muted mb-4 text-start" style="max-width:600px;">Discover the Most Loved Destination Around the Globe</p>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0">
+              <img src="img/card.jpg" class="card-img-top rounded-4" alt="Badrinath" />
+              <div class="card-body d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="fw-semibold mb-1">Sacred Calm at Badrinath Temple.</h5>
+                  <p class="text-muted mb-0">Badrinath, Uttarakhand, India</p>
+                </div>
+                <span class="badge bg-primary align-self-start">4.7 <i class="ri-star-fill"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0">
+              <img src="img/card2.jpg" class="card-img-top rounded-4" alt="Puri" />
+              <div class="card-body d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="fw-semibold mb-1">Divine Majesty at Jagannath Temple.</h5>
+                  <p class="text-muted mb-0">Puri, Odisha, India</p>
+                </div>
+                <span class="badge bg-primary align-self-start">4.8 <i class="ri-star-fill"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0">
+              <img src="img/card3.webp" class="card-img-top rounded-4" alt="Neem Karoli" />
+              <div class="card-body d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="fw-semibold mb-1">Spiritual Serenity at Neem Karoli Temple.</h5>
+                  <p class="text-muted mb-0">Dehradun, India</p>
+                </div>
+                <span class="badge bg-primary align-self-start">4.5 <i class="ri-star-fill"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY (static layout, no hover effect) -->
+    <section id="tour" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-2">Bus Travel, the Easy Way!</h2>
+        <p class="text-center text-muted mb-5 mx-auto" style="max-width:600px;">Effortless planning for Your Next Adventure</p>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <i class="ri-bookmark-3-line text-primary fs-2 d-inline-block mb-3"></i>
+                <h5 class="fw-semibold mb-2">Seamless Booking Process</h5>
+                <h6 class="fw-semibold">Seat Booking, one Click Away</h6>
+                <p class="text-muted mb-0">From booking tickets to tracking your bus in real-time, everything is just a click away. Plan, book, and board with complete ease.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <i class="ri-landscape-fill text-primary fs-2 d-inline-block mb-3"></i>
+                <h5 class="fw-semibold mb-2">Tailored Itineraries</h5>
+                <h6 class="fw-semibold">Customized Plans Just for You</h6>
+                <p class="text-muted mb-0">From preferred timings to budget-friendly options and seat choices, enjoy a trip designed around your lifestyle.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <i class="ri-map-2-line text-primary fs-2 d-inline-block mb-3"></i>
+                <h5 class="fw-semibold mb-2">Expert Local Insights</h5>
+                <h6 class="fw-semibold">Insider Tips and Recommendations</h6>
+                <p class="text-muted mb-0">From the best boarding points to local travel hacks, our insights come from people who know the roads.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section id="package" class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 text-center">
+            <img src="img/showcase.webp" alt="Showcase" class="img-fluid rounded-4" />
+          </div>
+          <div class="col-lg-6">
+            <h3 class="fw-semibold mb-3">Ignite Your Wanderlust with Every Bus Ride</h3>
+            <p class="text-muted">Traveling by bus offers comfort and stunning views on your way to amazing destinations. Relax and enjoy the ride, whether you're heading to a vibrant city or a peaceful getaway.</p>
+            <p class="text-muted mb-4">Explore the world by bus with ease. From comfortable seating to scenic routes, our buses offer the perfect way to explore cities, nature, and everything in between.</p>
+            <a class="btn btn-primary btn-lg rounded-pill" href="#contact">BOOK A Bus Now <i class="ri-arrow-right-line ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER STATS -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-md-4">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+              <h2 class="text-primary fw-semibold mb-1">10+</h2>
+              <p class="text-muted mb-0">Years Experience</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+              <h2 class="text-primary fw-semibold mb-1">12k</h2>
+              <p class="text-muted mb-0">Happy Clients</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+              <h2 class="text-primary fw-semibold mb-1">4.8</h2>
+              <p class="text-muted mb-0">Overrall Ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOVER -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-2">Discover Peace, Culture, and Devotion with Our Temple Bus Travels</h2>
+        <p class="text-muted mx-auto mb-5" style="max-width:600px;">Witness Stunning Landscapes from the Comfort of Your Bus Seat</p>
+
+        <div class="row g-4 text-start text-md-center">
+          <div class="col-md-4">
+            <div class="p-4 rounded-4 border h-100">
+              <i class="ri-camera-lens-line text-primary fs-2 d-inline-block mb-2"></i>
+              <h5 class="fw-bold">Your Road, Your Story</h5>
+              <p class="text-muted mb-0">Experience the freedom of travel with our comfortable and reliable bus trips. Enjoy stunning views while relaxing in spacious seats.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 rounded-4 border h-100">
+              <i class="ri-ship-line text-primary fs-2 d-inline-block mb-2"></i>
+              <h5 class="fw-bold">Coastal Wonders</h5>
+              <p class="text-muted mb-0">Embark on a journey through mesmerizing coastal wonders—pristine beaches, stunning cliffs, and ocean views.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 rounded-4 border h-100">
+              <i class="ri-landscape-line text-primary fs-2 d-inline-block mb-2"></i>
+              <h5 class="fw-bold">Historic Landmarks</h5>
+              <p class="text-muted mb-0">Explore the charm of historic landmarks on our curated bus tours and immerse yourself in rich history.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-light pt-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a href="#home" class="fw-bold fs-4 d-inline-block mb-3 link-dark text-decoration-none">BusTraveller</a>
+            <p class="text-muted">Explore the world with ease and excitement through our all-in-one bus travel platform. Your journey begins here — where smooth planning meets unforgettable road experiences.</p>
+            <div class="d-flex gap-2">
+              <a class="btn btn-primary btn-sm rounded-circle" href="#"><i class="ri-facebook-fill"></i></a>
+              <a class="btn btn-primary btn-sm rounded-circle" href="#"><i class="ri-instagram-line"></i></a>
+              <a class="btn btn-primary btn-sm rounded-circle" href="#"><i class="ri-youtube-line"></i></a>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-2">
+            <h5 class="fw-semibold mb-3">Quick Links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a class="nav-link p-0 link-secondary" href="#home">Home</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 link-secondary" href="#">Bus</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 link-secondary" href="#">Hotels</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 link-secondary" href="#">Cruise</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <h5 class="fw-semibold mb-3">Contact Us</h5>
+            <ul class="list-unstyled text-secondary">
+              <li class="mb-2"><i class="ri-phone-fill me-2"></i>+91 12345 67890</li>
+              <li class="mb-2"><i class="ri-record-mail-line me-2"></i>info@BusTraveller</li>
+              <li><i class="ri-map-pin-2-fill me-2"></i>Agra, India</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5 class="fw-semibold mb-3">Subscribe</h5>
+            <form>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Enter your email" />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="border-top mt-4 py-3 text-center text-secondary">
+          <div>Copyright © 2025 Code Prashtt. All rights reserved.</div>
+          <div>Distributed by <a class="text-decoration-none" href="https://www.themewagon.com" target="_blank">ThemeWagon</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
